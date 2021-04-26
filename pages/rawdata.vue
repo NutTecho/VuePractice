@@ -33,15 +33,17 @@
             :getprice="50"
             @add-to-cart = "addstock"
              />
+            <Tabbasic ></Tabbasic>
         </div>
      </div>
 </template>
 <script>
 import Cardassy from '~/components/cardassy.vue';
+import Tabbasic from '~/components/tabbasic.vue';
 export default {
-    components:{ Cardassy },
-    data() {
-        return{
+    components:{ Cardassy,Tabbasic},
+    data(){
+        return {
             state : true,
             stock : 5,
             product:"Sock",
@@ -51,9 +53,7 @@ export default {
                 {id:1,pname:'green sock',color:'green',prodimage:require("@/assets/image/green-sock.jpg")},
                 {id:2,pname:'blue sock',color:'blue',prodimage:require("@/assets/image/blue-sock.jpg")}
             ],
-          
         }
-        
     },
     methods:
     {
