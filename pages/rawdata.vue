@@ -34,12 +34,14 @@
             @add-to-cart = "addstock"
              />
             <Tabbasic ></Tabbasic>
+            <!-- <ChartLine></ChartLine> -->
         </div>
      </div>
 </template>
 <script>
 import Cardassy from '~/components/cardassy.vue';
 import Tabbasic from '~/components/tabbasic.vue';
+// import ChartLine from '~/components/chartline.vue';
 export default {
     components:{ Cardassy,Tabbasic},
     data(){

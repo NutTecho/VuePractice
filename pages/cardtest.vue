@@ -2,6 +2,14 @@
     <div class="container-fluid">
         <h2 class="text-center">Assembly Line {{$route.params.name}}</h2>
         <hr/>
+        <p>
+           <label>Input your date</label>
+           <input class="container" type=date  placeholder="input date"/> 
+        </p>
+        <p>
+           <label>Input your time</label>
+           <input class="container" type=time  placeholder="input time"/> 
+        </p>
         <div class="card-deck">
             <div class="card bg-danger border-light mb-3 text-white"
              v-for="item in items" :key="item.id">
@@ -19,14 +27,14 @@
                 </div>
             </div>
         </div>
-        <div>
+        <!-- <div>
             <Cardassy
             headtitle="testprops"
             datacontent="xxxxx"
             :getprice="50"
             />
             <nuxt-child/> 
-        </div>
+        </div> -->
        
     </div>
     
@@ -39,15 +47,15 @@ export default {
     components:{ Cardassy },
     data(){
         return {
+          datacollection: null,
           items: [
                 {line:"A",ndata: 10},
                 {line:"B",ndata: 12},
                 {line:"C",ndata: 14},
                 {line:"D",ndata: 16},
                 {line:"E",ndata: 18},
-            ]
-
-        }
+            ],
+     }
     },
      methods: {
       hoverHandler(isHovered) {

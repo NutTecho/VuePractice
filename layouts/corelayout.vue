@@ -11,6 +11,7 @@
                     <b-navbar-nav>
                         <b-nav-item href="/about">About</b-nav-item>
                         <b-nav-item href="/cardtest">CardTest</b-nav-item>
+                        <b-nav-item href="/charttest">Chart</b-nav-item>
                     </b-navbar-nav>
                 </b-collapse>
         </b-navbar>
